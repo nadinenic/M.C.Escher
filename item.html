@@ -1,1 +1,193 @@
-siamo dentro item.html
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- metadati Dublin Core -->
+    <meta name="DC.Title" content="Relativity">
+    <meta name="DC.Creator" content="Maurits Cornelis Escher">
+    <meta name="DC.Subject" content="Architettura impossibile; illusioni ottiche; prospettiva multipla">
+    <meta name="DC.Description" content="Stampa litografica realizzata da M. C. Escher nel 1953, raffigurante un complesso sistema di scale in direzioni opposte, generando un’illusione ottica di realtà alternativa.">
+    <meta name="DC.Publisher" content="M.C. Escher Foundation">
+    <meta name="DC.Contributor" content="Escher in Het Paleis">
+    <meta name="DC.Date" content="1953">
+    <meta name="DC.Type" content="Immagine; stampa litografica">
+    <meta name="DC.Format" content="27.7 × 29.2 cm; carta, inchiostro">
+    <link rel="DC.Identifier" href="https://it.wikipedia.org/wiki/Relativity_(Escher)">
+    <meta name="DC.Source" content="Maurits Cornelis Escher, Relativity, 1953; fonte: Wikipedia">
+    <meta name="DC.Language" content="it">
+    <meta name="DC.Relation" content="https://www.escherinhetpaleis.nl/collezione/relativity">
+    <link rel="DC.Coverage" href="http://vocab.getty.edu/tgn/7016353">
+    <meta name="DC.Rights" content="© M.C. Escher Foundation; tutti i diritti riservati">
+    
+    <title>Il mondo di Escher</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/catalogo.css">
+    <script src="./js/bootstrap.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-dark navbar-expand-lg bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Il mondo di Escher</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Introduzione</a>
+
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active dropdown-toggle" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Catalogo
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="catalogo.html">Elenco opere</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Linea del tempo</a></li>
+                            <li><a class="dropdown-item" href="#">Mappa dei luoghi</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Cerca" aria-label="Cerca" />
+                    <button class="btn btn-outline-light" type="submit">Cerca</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- inizio contenuto body -->
+    <main role="main">
+        <section class="jumbotron text-center" style="background-color:#F5F5F5">
+            <div class="container-fluid">
+                <div class="row mb-4">
+                    <div class="col">
+                        <h1 class="jumbotron-heading text-center">Nome Opera</h1>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <!--Colonna metadati-->
+                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-2">
+                        <aside class="p-3 bg-light border rounded">
+                            <h5 class="mb-3 text-center">Licenza</h5>
+                            <!-- Filtro: LicenZe -->
+                            <div class="mb-3">
+                                <button class="btn btn-outline-dark w-100" type="button">
+                                    Licenze
+                                </button>
+                            </div>
+
+                            <!-- Filtro: Condividi -->
+                            <div class="mb-3">
+                                <button class="btn btn-outline-dark w-100" type="button">
+                                    Condividi
+                                </button>
+                            </div>
+
+                            <!-- Filtro: Immagini -->
+                            <div class="mb-3">
+                                <button class="btn btn-outline-dark w-100" type="button">
+                                    Scarica
+                                </button>
+                            </div>
+
+                            <!-- Filtro: Condividi -->
+                            <div class="mb-3">
+                                <button class="btn btn-outline-dark w-100" type="button">
+                                    XML/TEI???????
+                                </button>
+                            </div>
+
+
+                        </aside>
+                    </div>
+                    <!--Colonna Carosello-->
+                    <div class="col-lg-8 col-md-4 col-sm-12 col-xs-12">
+                        <div class="card">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="./img/relatività.jpg" alt="..." class="d-block w-100">
+                                </div>
+
+                            </div>
+                              <div class="card-body">
+                                <p class="card-text"><span>Titolo:</span> <b>Relativity</b></p><hr>
+                                <p class="card-text"><span>Creatore:</span> <b>Maurits Cornelis Escher</b></p><hr>
+                                <p class="card-text"><span>Data:</span> <b>1953</b></p><hr>
+                                <p class="card-text"><span>Tipo di oggetto:</span> <b>Stampa litografica</b></p><hr>
+                                <p class="card-text"><span>Dimensioni:</span> <b>27.7 × 29.2 cm</b></p><hr>
+                                <p class="card-text"><span>Materiale:</span> <b>Carta, inchiostro</b></p><hr>
+                                <p class="card-text"><span>Codice identificativo:</span> <b>relativity-1953</b></p><hr>
+                                <p class="card-text"><span>Istituzione fornitrice:</span> <b><a href="https://www.escherinhetpaleis.nl/collezione/relativity" target="_blank">Escher in Het Paleis</a></b></p><hr>
+                                <p class="card-text"><span>Intermediario:</span> <b>M.C. Escher Foundation</b></p><hr>
+                                <p class="card-text"><span>Posizione attuale:</span> <b><a href="http://www.geonames.org/2747373" target="_blank">The Hague<sup>GeoNames</sup></a></b></p><hr>
+                                <p class="card-text">Tema:</p>
+                                <div>
+                                    <button class="btn btn-primary btn-sm"><i class="bi bi-tag-fill"></i> Illusioni ottiche</button>
+                                    <button class="btn btn-secondary btn-sm"><i class="bi bi-tag-fill"></i> Prospettiva</button>
+                                    <button class="btn btn-success btn-sm"><i class="bi bi-tag-fill"></i> Architettura impossibile</button>
+                                    <button class="btn btn-info btn-sm"><i class="bi bi-tag-fill"></i> Stampa litografica</button>
+                                </div><hr>
+                                <p class="card-text">Colori estratti dall'immagine:</p>
+                                <div class="btn-group" role="group" aria-label="Palette">
+                                    <button class="btn btn-secondary btn-sm text-dark" style="background-color:#CCCCCC;border-color:#CCCCCC;">#CCCCCC</button>
+                                    <button class="btn btn-secondary btn-sm" style="background-color:#999999;border-color:#999999;">#999999</button>
+                                    <button class="btn btn-secondary btn-sm" style="background-color:#666666;border-color:#666666;">#666666</button>
+                                    <button class="btn btn-secondary btn-sm" style="background-color:#333333;border-color:#333333;">#333333</button>
+                                    <button class="btn btn-secondary btn-sm" style="background-color:#000000;border-color:#000000;">#000000</button>
+                                </div>
+                                <div class="form-check"><input class="form-check-input" type="radio" name="colorFormat" value="hex" checked><label class="form-check-label">Hex</label></div>
+                                <div class="form-check"><input class="form-check-input" type="radio" name="colorFormat" value="rgb"><label class="form-check-label">RGB</label></div>
+                                <div class="form-check"><input class="form-check-input" type="radio" name="colorFormat" value="hsl"><label class="form-check-label">HSL</label></div>
+                            </div>
+                        </div>
+                        <!-- The slideshow/carousel -->
+
+                    </div>
+
+                    <!--Colonna guida-->
+                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-2">
+                        <aside class="p-3 bg-light border rounded">
+                            <h5 class="mb-3 text-center">Guida</h5>
+                        </aside>
+                    </div>
+                </div>
+    </main>
+    <!-- fine contenuto body -->
+
+
+    <!-- fine contenuto body -->
+    <footer class="py-3 my-4 ">
+        <ul class="nav navbar-dark bg-dark justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item">
+                <a href="index.html" class="nav-link px-2 text-body-secondary" style="color:white !important;">Home</a>
+            </li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary"
+                    style="color:white !important;">Introduzione</a></li>
+            <li class="nav-item"><a href="catalogo.html" class="nav-link px-2 text-body-secondary"
+                    style="color:white !important;">Catalogo</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary"
+                    style="color:white !important;">Crediti</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary"
+                    style="color:white !important;">Licenze</a></li>
+        </ul>
+        <p class="text-center text-body-secondary">Copyright (c) 2025 by Nadine Nicoli</p>
+    </footer>
+
+</body>
+
+</html>

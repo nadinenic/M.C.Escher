@@ -41,6 +41,7 @@
               <li>
                 <hr class="dropdown-divider">
               </li>
+              <li><a class="dropdown-item" href="#">Eschermania</a></li>
               <li><a class="dropdown-item" href="#">Linea del tempo</a></li>
               <li><a class="dropdown-item" href="#">Mappa dei luoghi</a></li>
             </ul>
@@ -64,8 +65,8 @@
         <img src="./img/giorno-e-notte2.jpg" class="carousel-container-img img-fluid" alt="...">
 
         <div class="carousel-container">
-          <h1 class="titolo">Il mondo di Escher</h1><br>
-          <h4 class="titolo">“Viaggio tra forme, illusioni e simmetrie”</h4>
+          <h1 class="titolo" style="font-size: 450%">Il mondo di Escher</h1><br>
+          <h4 class="titolo" style="font-size:200%">“Viaggio tra forme, illusioni e simmetrie”</h4>
         </div>
       </div>
 
@@ -80,53 +81,82 @@
     <section id="sezioneDescrittiva" class="container py-5">
       <div class="row justify-content-center">
         <div class="col-lg-10 col-md-10">
-          <h2>Il progetto</h2>
-          <p class="text-justify mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi illum
-            necessitatibus cumque id expedita delectus repudiandae, reprehenderit laboriosam. Molestias est mollitia
-            ipsam alias voluptatem sint quod officiis cum earum similique! Lorem ipsum dolor, sit amet consectetur
-            adipisicing elit. Distinctio magnam molestias laborum alias laboriosam, harum cupiditate optio, deserunt
-            nobis animi molestiae in saepe sequi quidem cum? Laudantium corporis veritatis distinctio.
+          <h2>M.C. Escher</h2>
+          <br>
+          <p style="text-align:left; font-size: 17px">Maurits Cornelis Escher, nato nel 1898 a Leeuwarden, nei Paesi
+            Bassi,
+            è uno degli artisti più affascinanti del XX secolo, capace di trasformare la matematica,
+            la geometria e la logica in opere d’arte che sfidano i confini della percezione.
+            Il suo talento unico risiede nella capacità di trasportare chi osserva in mondi immaginifici e
+            apparentemente impossibili,
+            grazie a un linguaggio visivo che combina tecniche artigianali e una profonda riflessione filosofica.
+            <br> In una lettera del 16 novembre 1953, Escher stesso rifletteva sull’essenza della sua arte, evidenziando
+            come l’obiettivo
+            principale non fosse la perfezione tecnica della stampa, ma piuttosto l’effetto che essa poteva avere sulla
+            mente dell’osservatore:
+            “L’illusione che l’artista desidera creare è soggettiva e molto più importante dei mezzi fisici oggettivi
+            con cui cerca di crearla.”
+            Con queste parole, Escher sottolinea come il vero scopo delle sue opere non fosse semplicemente una
+            riproduzione impeccabile di una realtà fisica,
+            ma la creazione di mondi che sfidano la nostra comprensione dello spazio e del tempo.
           </p>
         </div>
       </div>
     </section>
     <!-- fine introduzione -->
 
-    <!-- inizio autori -->
-    <section class="py-5" style="background-color:#E8E8E8">
-      <div class="container px-5 my-5 border">
-        <div class="row gx-5 align-items-center ">
+    <!-- inizio biografia  -->
+    <section class="py-5" style="background-color:#E8E8E8;">
+      <div class="container my-4 border">
+        <div class="row gx-5 align-items-center">
           <!-- colonna immagine 5/12-->
-          <div class="col-lg-5 ">
-            <div id="caroselloAutori" class="carousel slide" data-bs-ride="caroselloAutori">
-              <div class="carousel-inner">
+          <div class="col-lg-5">
+            <!-- carosello biografia -->
+            <div id="carouselBiografia" class="carousel slide" data-bs-ride="carouselBiografia">
+              <div class="carousel-inner ">
                 <div class="carousel-item active">
-                  <img src="./img/mano-con-sfera-riflettente2.jpg" class="img-fluid rounded mb-5 mb-lg-0"
-                    alt="...">
-                  <!-- rendere le immagini più piccole-->
+                  <img src="./img/Foto1.jpg" class="img-fluid rounded mb-5 mb-lg-0" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="./img/Foto2.jpg" class="img-fluid rounded mb-5 mb-lg-0" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="./img/Foto3.jpg" class="img-fluid rounded mb-5 mb-lg-0" alt="...">
                 </div>
               </div>
+              <!--bottoni destra e sinistra-->
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselBiografia"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselBiografia"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
             </div>
           </div>
           <!-- colonna testo descrittivo 7/12-->
           <div class="col-lg-7">
-            <h2 class="fw-bolder">M.C. Escher </h2>
-            <p class="lead fw-normal text-muted mb-0">La pittura metafisica è una corrente artistica del XX secolo, nata
-              in Italia e caratterizzata dalla rappresentazione di oggetti in modo nitido e statico, ma inseriti in
-              contesti stranianti e suggestivi, volti a esplorare l'essenza profonda della realtà. I suoi principali
-              esponenti sono Giorgio de Chirico, Carlo Carrà e Alberto Savinio. </p>
-            <p class="lead fw-normal text-muted mb-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod,
-              minus expedita. Voluptatibus, tenetur excepturi. Quaerat, facere! Itaque ex cupiditate veritatis
-              assumenda, eius obcaecati sequi eligendi commodi ut, ipsum quia odio! </p>
-            <p class="lead fw-normal text-muted mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
-              ea vero nam nisi eaque aliquam dolorum fugiat, numquam vitae, quidem esse corrupti accusantium architecto
-              beatae iste. Sequi dicta quam quaerat?
-            </p>
-            <p class="lead fw-normal text-muted mb-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae
-              veritatis nostrum, sequi voluptates possimus ad. Accusantium, debitis. Illum nobis accusantium veniam
-              esse? Culpa reprehenderit impedit, ad quae laborum est accusantium.</p>
+            <h2 class="fw-bolder">Biografia </h2>
+            <p class="lead fw-normal text-muted mb-0" style="font-size: large;">Maurits Cornelis Escher nacque il 17
+              giugno 1898 a Leeuwarden, Paesi Bassi,
+              ultimogenito dell'ingegnere idraulico George Arnold Escher e di Sara Gleichman.
+              Nel 1903 la agiata famiglia si trasferì a Arnhem, dove il giovane Maurits ricevette la prima educazione
+              nelle scuole elementari locali.
+              Per le varie materie insegnate a scuola «Mauk» rivelò un interesse saltuario e inadeguato,
+              tanto che dovette ripetere l'anno scolastico per ben due volte. Solo il disegno era in grado di allietare
+              le
+              sue ore dietro i banchi:
+              Escher, in effetti, si dedicò alle arti grafiche con sincero entusiasmo, e già adolescente sapeva
+              praticare
+              con maestria l'incisione su legno.
+              Sono molti, dopotutto, gli indizi che consentono di cogliere il lievitare della sua vocazione grafica,
+              nonostante anche in questo sia stato incompreso e combattuto, come dimostrano i mortificanti voti ricevuti
+              durante gli esami d'arte.</p>
+            <p><a href="#" style="color:black; font-size:120%">Scopri di più</a></p>
           </div>
-
         </div>
       </div>
     </section>
@@ -135,25 +165,23 @@
 
     <!-- INIZIO Opere -->
     <section class="py-5">
-      <div class="container px- my-5">
+      <div class="container  my-5">
         <div class="row gx-5 align-items-center">
-          <div class="col-lg-6 order-first order-lg-last">
-
-            <div id="carouselExampleControls2" class="carousel slide" data-bs-ride="carousel">
-              <div class="carousel-inner carousel-img-box">
+          <div class="col-lg-5 order-first order-lg-last">
+            <!--carosello opere-->
+            <div id="carouselExampleControls2" style="width:400px;height:400px;" class="carousel slide"
+              data-bs-ride="carousel">
+              <div class="carousel-inner ">
                 <div class="carousel-item active">
-                  <img src="./img/relatività.jpg" 
-                    class="img-fluid rounded mb-5 mb-lg-0" alt="...">
+                  <img src="./img/relatività.jpg" class="img-fluid rounded mb-5 mb-lg-0" alt="...">
                 </div>
                 <div class="carousel-item">
-                  <img src="./img/piazza-d'italia-de-chirico.jpg"
-                    class="img-fluid rounded mb-5 mb-lg-0"
-                    alt="...">
+                  <img src="./img/escher-galleria-di-stampe-or.jpg" class="img-fluid rounded mb-5 mb-lg-0" alt="..."
+                    style="width: 400px; height: 400px;">
                 </div>
                 <div class="carousel-item">
-                  <img src="./img/enigma-dell'oracolo-de-chirico.jpg"
-                    class="img-fluid rounded mb-5 mb-lg-0"
-                    alt="...">
+                  <img src="./img/Escher-Rettili.jpg" class="img-fluid rounded mb-5 mb-lg-0" alt="..."
+                    style="width: 400px; height: 400px;">
                 </div>
               </div>
               <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls2"
@@ -168,16 +196,17 @@
               </button>
             </div>
           </div>
-          <div class="col-lg-6">
+          <div class="col-lg-7">
             <h2 class="fw-bolder">Opere</h2>
-            <p class="lead fw-normal text-muted mb-0">Dal 1999 ad oggi abbiamo accresciuto l'esperienza del nostro team
-              certificando centinaia di aziende. Attraverso un lungo arco temporale che ha visto cambiare ed evolversi
-              la normativa di settore, la nostra formazione è stata costante e capace di rispondere prontamente alle
-              mutate esigenze che si sono via via presentate nelle varie attività dalla produzione agricola, alla
-              trasformazione di prodotto.</p>
-            <p class="lead fw-normal text-muted mb-0">Abbiamo investito nella qualità della certificazione scegliendo di
-              avvalerci di personale stimolato ad accrescere le proprie competenze, facendo delle Risorse Umane il
-              nostro reale punto di forza. </p>
+            <p class="lead fw-normal text-muted mb-0" style="font-size: large;">L'opera di Escher è costituita in gran
+              parte da xilografie, soprattutto litografie e mezzetinte,
+              frutto di un’indagine di differenti campi di studio: dalla geometria alla cristallografia, fino alle leggi
+              della percezione visiva,
+              interessi a cui l'artista si dedica sin dalla giovinezza.
+              <br>Escher mescola la sua capacità grafica di aderenza al reale con le sue elaborazioni visionarie e
+              trasformazioni fantastiche,
+              concependo così opere narrativamente avvincenti, intellettuali, ma anche emotivamente inquietanti.</p>
+            <p><a href="#" style="color:black; font-size:120%">Scopri di più</a></p>
           </div>
         </div>
       </div>
@@ -193,8 +222,7 @@
             <div class="col-lg-8 col-xl-6">
               <div class="text-center">
                 <h2 class="fw-bolder">Altre sezioni</h2>
-                <p class="lead fw-normal text-muted mb-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Mollitia dignissimos enim, est unde perspiciatis a iure asperiores .</p>
+                <p class="lead fw-normal text-muted mb-5">Esplora il mondo di Escher e scopri i suoi capolavori</p>
               </div>
             </div>
           </div>
@@ -204,12 +232,13 @@
             <div class="card h-100 shadow border-0">
               <div class="card-body p-4">
                 <div class="badge bg-primary bg-gradient rounded-pill mb-2"></div>
-                <a class="text-decoration-none link-dark stretched-link" href="#">
-                  <h5 class="card-title mb-3">LISTA </h5>
+                <h5 class="card-title mb-3">ESCHERMANIA</h5>
+                <p class="card-text mb-0">Scopri l'"Eschermania", il fenomeno culturale che celebra e diffonde le opere
+                  di M.C. Escher,
+                  le quali hanno influenzato il cinema, i fumetti, la musica, la pop art, la pubblicità e i videoclip.</p>
+                <a class="text-decoration-none link-dark " href="#">
+                  <span style='font-size:40px; padding-left: 80%;'>&#11157;</span>
                 </a>
-                <p class="card-text mb-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam tempore
-                  pariatur, minus vel, iusto totam animi aspernatur eos non explicabo, quod cumque voluptates! Modi
-                  commodi perferendis nesciunt at dicta tempore.</p>
               </div>
             </div>
           </div>
@@ -219,12 +248,12 @@
             <div class="card h-100 shadow border-0">
               <div class="card-body p-4">
                 <div class="badge bg-primary bg-gradient rounded-pill mb-2"></div>
-                <a class="text-decoration-none link-dark stretched-link" href="#">
-                  <h5 class="card-title mb-3">MAPPA</h5>
+                <h5 class="card-title mb-3">MAPPA</h5>
+                <p class="card-text mb-0">Lasciati guidare tra le tappe del maestro: luoghi che lo hanno ospitato,
+                  ispirato e influenzato profondamente nella realizzazione delle sue opere più grandi e celebri..</p>
+                <a class="text-decoration-none link-dark " href="#">
+                  <span style='font-size:40px; padding-left: 80%;'>&#11157;</span>
                 </a>
-                <p class="card-text mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio culpa vero non
-                  tempore distinctio, officia, ipsa dolorum recusandae nisi reprehenderit optio quas. Nam itaque aliquam
-                  quas neque deserunt qui error.</p>
               </div>
             </div>
           </div>
@@ -234,12 +263,12 @@
             <div class="card h-100 shadow border-0">
               <div class="card-body p-4">
                 <div class="badge bg-primary bg-gradient rounded-pill mb-2"></div>
-                <a class="text-decoration-none link-dark stretched-link" href="#">
-                  <h5 class="card-title mb-3">LINEA DEL TEMPO</h5>
+                <h5 class="card-title mb-3">LINEA DEL TEMPO</h5>
+                <p class="card-text mb-0">Ripercorri le tappe fondamentali della formazione e della vita di Escher,
+                  dai primi studi fino alla piena affermazione del suo stile unico e visionario.</p>
+                <a class="text-decoration-none link-dark " href="#">
+                  <span style='font-size:40px; padding-left: 80%;'>&#11157;</span>
                 </a>
-                <p class="card-text mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem minus illum
-                  tempore suscipit obcaecati itaque architecto possimus libero sint eveniet sunt officia necessitatibus
-                  maiores, ratione sapiente aspernatur eos aperiam voluptatem.</p>
               </div>
             </div>
           </div>
