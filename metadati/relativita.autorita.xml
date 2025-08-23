@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<listPerson xmlns="http://www.tei-c.org/ns/1.0">
+  <person xml:id="escher-mc">
+    <persName>
+      <forename>Maurits Cornelis</forename>
+      <surname>Escher</surname>
+      <addName type="abbr">M. C. Escher</addName>
+    </persName>
+    <sex>m</sex>
+    <nationality>olandese</nationality>
+    <birth when="1898-06-17" where="Leeuwarden, NL"/>
+    <death when="1972-03-27" where="Hilversum, NL"/>
+    <occupation>artista grafico; incisore; litografo</occupation>
+    <note>Artista noto per litografie e xilografie ispirate a matematica, prospettiva e tassellazioni.</note>
+    <idno type="VIAF">5051087</idno>
+    <idno type="ISNI">0000000108650831</idno>
+    <idno type="Wikidata">Q1470</idno>
+    <idno type="Website">https://mcescher.com/</idno>
+  </person>
+</listPerson>

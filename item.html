@@ -4,31 +4,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <!-- metadati Dublin Core -->
-    <meta name="DC.Title" content="Relativity">
-    <meta name="DC.Creator" content="Maurits Cornelis Escher">
-    <meta name="DC.Subject" content="Architettura impossibile; illusioni ottiche; prospettiva multipla">
-    <meta name="DC.Description" content="Stampa litografica realizzata da M. C. Escher nel 1953, raffigurante un complesso sistema di scale in direzioni opposte, generando un’illusione ottica di realtà alternativa.">
-    <meta name="DC.Publisher" content="M.C. Escher Foundation">
-    <meta name="DC.Contributor" content="Escher in Het Paleis">
-    <meta name="DC.Date" content="1953">
-    <meta name="DC.Type" content="Immagine; stampa litografica">
-    <meta name="DC.Format" content="27.7 × 29.2 cm; carta, inchiostro">
-    <link rel="DC.Identifier" href="https://it.wikipedia.org/wiki/Relativity_(Escher)">
-    <meta name="DC.Source" content="Maurits Cornelis Escher, Relativity, 1953; fonte: Wikipedia">
-    <meta name="DC.Language" content="it">
-    <meta name="DC.Relation" content="https://www.escherinhetpaleis.nl/collezione/relativity">
-    <link rel="DC.Coverage" href="http://vocab.getty.edu/tgn/7016353">
-    <meta name="DC.Rights" content="© M.C. Escher Foundation; tutti i diritti riservati">
-    
     <title>Il mondo di Escher</title>
+
+    <!--inizio metadatazione Dc-->
+    <META NAME="DC.Title" CONTENT="Il mondo di Escher">
+    <META NAME="DC.Creator" CONTENT="Nadine Nicoli">
+    <META NAME="DC.Subject" CONTENT="M.C. Escher, arte, illusioni ottiche, simmetrie, xilografie, litografie">
+    <META NAME="DC.Description"
+        CONTENT="Sito dedicato a Maurits Cornelis Escher, con introduzione, biografia, opere, linea del tempo, mappa dei luoghi ed esplorazioni tematiche.">
+    <META NAME="DC.Publisher" CONTENT="Nadine Nicoli">
+    <META NAME="DC.Date" CONTENT="2025">
+    <META NAME="DC.Type" CONTENT="Sito web informativo ed educativo">
+    <META NAME="DC.Format" CONTENT="text/html; charset=UTF-8">
+    <META NAME="DC.Identifier" CONTENT="https://nadinenic.github.io/esame-digital">
+    <META NAME="DC.Source" CONTENT="Biografie e opere di Maurits Cornelis Escher, fonti storiche e artistiche">
+    <META NAME="DC.Language" CONTENT="it">
+    <META NAME="DC.Relation" CONTENT="catalogo.html, altre sezioni dedicate a Escher">
+    <META NAME="DC.Rights" CONTENT="Copyright (c) 2025 Nadine Nicoli - Tutti i diritti riservati">
+    <!-- fine metadatazione DC-->
+
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/catalogo.css">
     <script src="./js/bootstrap.js"></script>
 </head>
 
 <body>
-    <nav class="navbar navbar-dark navbar-expand-lg bg-dark">
+    <nav class="navbar navbar-dark navbar-expand-lg bg-dark fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Il mondo di Escher</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -84,75 +85,89 @@
                     <div class="col-xs-12 col-sm-12 col-md-4 col-lg-2">
                         <aside class="p-3 bg-light border rounded">
                             <h5 class="mb-3 text-center">Licenza</h5>
-                            <!-- Filtro: LicenZe -->
-                            <div class="mb-3">
-                                <button class="btn btn-outline-dark w-100" type="button">
-                                    Licenze
-                                </button>
-                            </div>
 
-                            <!-- Filtro: Condividi -->
                             <div class="mb-3">
-                                <button class="btn btn-outline-dark w-100" type="button">
+                                <a class="btn btn-outline-dark w-100" type="button" href="#">
                                     Condividi
-                                </button>
+                                </a>
                             </div>
 
-                            <!-- Filtro: Immagini -->
+
                             <div class="mb-3">
-                                <button class="btn btn-outline-dark w-100" type="button">
+                                <a class="btn btn-outline-dark w-100" type="button" href="./img/relatività.jpg"
+                                    download="download">
                                     Scarica
-                                </button>
+                                </a>
                             </div>
 
-                            <!-- Filtro: Condividi -->
+
                             <div class="mb-3">
-                                <button class="btn btn-outline-dark w-100" type="button">
-                                    XML/TEI???????
-                                </button>
+                                <a class="btn btn-outline-dark w-100" type="button" href="./metadati/relativita.dc.xml">
+                                    📄 XML-DC
+                                </a>
+                            </div>
+
+
+                            <div class="mb-3">
+                                <a class="btn btn-outline-dark w-100" type="button"
+                                    href="./metadati/relativita.tei.xml">
+                                    📄 XML-TEI
+                                </a>
+                            </div>
+
+                            <div class="mb-3">
+                                <a class="btn btn-outline-dark w-100" type="button"
+                                    href="./metadati/relativita.autorita.xml">
+                                    🔗 Authorities
+                                </a>
                             </div>
 
 
                         </aside>
                     </div>
                     <!--Colonna Carosello-->
-                    <div class="col-lg-8 col-md-4 col-sm-12 col-xs-12">
+                    <div class="col-lg-7 col-md-4 col-sm-12 col-xs-12">
                         <div class="card">
                             <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="./img/relatività.jpg" alt="..." class="d-block w-100">
+                                <div class="carousel-item active ">
+                                    <img src="./img/relatività.jpg" alt="..."  class="d-block w-100">
                                 </div>
 
                             </div>
-                              <div class="card-body">
-                                <p class="card-text"><span>Titolo:</span> <b>Relativity</b></p><hr>
-                                <p class="card-text"><span>Creatore:</span> <b>Maurits Cornelis Escher</b></p><hr>
-                                <p class="card-text"><span>Data:</span> <b>1953</b></p><hr>
-                                <p class="card-text"><span>Tipo di oggetto:</span> <b>Stampa litografica</b></p><hr>
-                                <p class="card-text"><span>Dimensioni:</span> <b>27.7 × 29.2 cm</b></p><hr>
-                                <p class="card-text"><span>Materiale:</span> <b>Carta, inchiostro</b></p><hr>
-                                <p class="card-text"><span>Codice identificativo:</span> <b>relativity-1953</b></p><hr>
-                                <p class="card-text"><span>Istituzione fornitrice:</span> <b><a href="https://www.escherinhetpaleis.nl/collezione/relativity" target="_blank">Escher in Het Paleis</a></b></p><hr>
-                                <p class="card-text"><span>Intermediario:</span> <b>M.C. Escher Foundation</b></p><hr>
-                                <p class="card-text"><span>Posizione attuale:</span> <b><a href="http://www.geonames.org/2747373" target="_blank">The Hague<sup>GeoNames</sup></a></b></p><hr>
+                            <div class="card-body">
+                                <p class="card-text"><span>Titolo:</span> <b>Relatività</b></p>
+                                <hr>
+                                <p class="card-text"><span>Creatore:</span> <b>Maurits Cornelis Escher</b></p>
+                                <hr>
+                                <p class="card-text"><span>Data:</span> <b>1953</b></p>
+                                <hr>
+                                <p class="card-text"><span>Tipo di oggetto:</span> <b>Stampa litografica</b></p>
+                                <hr>
+                                <p class="card-text"><span>Dimensioni:</span> <b>27.7 × 29.2 cm</b></p>
+                                <hr>
+                                <p class="card-text"><span>Materiale:</span> <b>Carta, inchiostro</b></p>
+                                <hr>
+                                <p class="card-text"><span>Codice identificativo:</span> <b>relativity-1953</b></p>
+                                <hr>
+                                <p class="card-text"><span>Istituzione fornitrice:</span> <b>M.C. Escher Foundation</b></p>
+                                <hr>
+                                <p class="card-text"><span>Posizione attuale:</span> <b>National Gallery di Washington D.C.</b></p>
+                                <hr>
                                 <p class="card-text">Tema:</p>
                                 <div>
-                                    <button class="btn btn-primary btn-sm"><i class="bi bi-tag-fill"></i> Illusioni ottiche</button>
-                                    <button class="btn btn-secondary btn-sm"><i class="bi bi-tag-fill"></i> Prospettiva</button>
-                                    <button class="btn btn-success btn-sm"><i class="bi bi-tag-fill"></i> Architettura impossibile</button>
-                                    <button class="btn btn-info btn-sm"><i class="bi bi-tag-fill"></i> Stampa litografica</button>
-                                </div><hr>
-                                <p class="card-text">Colori estratti dall'immagine:</p>
-                                <div class="btn-group" role="group" aria-label="Palette">
-                                    <button class="btn btn-secondary btn-sm text-dark" style="background-color:#CCCCCC;border-color:#CCCCCC;">#CCCCCC</button>
-                                    <button class="btn btn-secondary btn-sm" style="background-color:#999999;border-color:#999999;">#999999</button>
-                                    <button class="btn btn-secondary btn-sm" style="background-color:#666666;border-color:#666666;">#666666</button>
-                                    <button class="btn btn-secondary btn-sm" style="background-color:#333333;border-color:#333333;">#333333</button>
-                                    <button class="btn btn-secondary btn-sm" style="background-color:#000000;border-color:#000000;">#000000</button>
+                                    <button class="btn btn-primary btn-sm"><i class="bi bi-tag-fill"></i> Illusioni
+                                        ottiche</button>
+                                    <button class="btn btn-secondary btn-sm"><i class="bi bi-tag-fill"></i>
+                                        Prospettiva</button>
+                                    <button class="btn btn-success btn-sm"><i class="bi bi-tag-fill"></i> Architettura
+                                        impossibile</button>
+                                    <button class="btn btn-info btn-sm"><i class="bi bi-tag-fill"></i> Stampa
+                                        litografica</button>
                                 </div>
-                                <div class="form-check"><input class="form-check-input" type="radio" name="colorFormat" value="hex" checked><label class="form-check-label">Hex</label></div>
-                                <div class="form-check"><input class="form-check-input" type="radio" name="colorFormat" value="rgb"><label class="form-check-label">RGB</label></div>
-                                <div class="form-check"><input class="form-check-input" type="radio" name="colorFormat" value="hsl"><label class="form-check-label">HSL</label></div>
+                                
+                                
+                                
+                                
                             </div>
                         </div>
                         <!-- The slideshow/carousel -->
@@ -160,9 +175,42 @@
                     </div>
 
                     <!--Colonna guida-->
-                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-2">
+                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3">
                         <aside class="p-3 bg-light border rounded">
                             <h5 class="mb-3 text-center">Guida</h5>
+                               <!-- guida -->
+                        <div>
+                            
+                        </div>
+                        <!-- suggerimenti -->
+                        <div class="mt-4">
+                            <p class="h6">Scopri di più sul creatore:</p>
+                            <div class="card">
+                                <img src="./img/Foto3.jpg" class="card-img-top"
+                                    alt="M.C. Escher" />
+                                <div class="card-body">
+                                    <h5 class="card-title">M.C. Escher</h5>
+                                    <p class="card-text">Attività: <b>......</b></p>
+                                    <p class="card-text">...... <b>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-4">
+                            <h6>Potrebbe interessarti anche:</h6>
+                            <div class="card">
+                                <img src="./img/belvedere.jpg" class="card-img-top"
+                                    />
+                                <div class="card-body">
+                                    <h5 class="card-title">Belvedere</h5>
+                                    <ul class="list-group">
+                                      <li class="list-group-item">Data: Maggio 1958</li>
+                                        <li class="list-group-item">Luogo: Museum Escher in Het Paleis</li>
+
+                                    </ul>
+                                    
+                                </div>
+                            </div>
+                        </div>
                         </aside>
                     </div>
                 </div>
