@@ -25,13 +25,16 @@
 
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/catalogo.css">
-    <script src="./js/bootstrap.js"></script>
+    <link rel="stylesheet" href="./css/aos.css">
+
+  <script src="./js/bootstrap.js"></script>
+    <script src="./js/aos.js"></script>
 </head>
 
 <body>
     <nav class="navbar navbar-dark navbar-expand-lg bg-dark fixed-top">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Il mondo di Escher</a>
+            <a class="navbar-brand" href="index.html">Il mondo di Escher</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -82,9 +85,9 @@
 
                 <div class="row">
                     <!--Colonna metadati-->
-                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-2">
+                    <div  data-aos="fade-up" data-aos-easing="ease-in-sine" class="col-xs-12 col-sm-12 col-md-4 col-lg-2">
                         <aside class="p-3 bg-light border rounded">
-                            <h5 class="mb-3 text-center">Licenza</h5>
+                            <h5 class="mb-3 text-center">TITOLO....</h5>
 
                             <div class="mb-3">
                                 <a class="btn btn-outline-dark w-100" type="button" href="#">
@@ -175,7 +178,7 @@
                     </div>
 
                     <!--Colonna guida-->
-                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3">
+                    <div  data-aos="fade-up" data-aos-easing="ease-in-sine" class="col-xs-12 col-sm-12 col-md-4 col-lg-3">
                         <aside class="p-3 bg-light border rounded">
                             <h5 class="mb-3 text-center">Guida</h5>
                                <!-- guida -->
@@ -237,5 +240,9 @@
     </footer>
 
 </body>
+<script>
 
+AOS.init();
+
+</script>
 </html>

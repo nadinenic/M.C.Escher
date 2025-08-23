@@ -28,7 +28,10 @@
   <link rel="stylesheet" href="./css/index.css">
   <!-- Importo il css di Bootstrap -->
   <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/aos.css">
+
   <script src="./js/bootstrap.js"></script>
+    <script src="./js/aos.js"></script>
 
 </head>
 
@@ -36,7 +39,7 @@
   <!-- INIZIO Navbar -->
   <nav class="navbar navbar-dark navbar-expand-lg bg-dark fixed-top">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Il mondo di Escher</a>
+      <a class="navbar-brand" href="index.html">Il mondo di Escher</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -96,7 +99,7 @@
   <!-- INIZIO Main: Sezione Progetto -->
   <main class="pt-2" id="scopri-di-piu">
     <!-- introduzione -->
-    <section id="sezioneDescrittiva" class="container py-5">
+    <section  data-aos="fade-down" data-aos-easing="ease-in-sine" id="sezioneDescrittiva" class="container py-5">
       <div class="row justify-content-center">
         <div class="col-lg-10 col-md-10">
           <h2>M.C. Escher</h2>
@@ -124,7 +127,7 @@
     <!-- fine introduzione -->
 
     <!-- inizio biografia  -->
-    <section class="py-5" style="background-color:#E8E8E8;">
+    <section data-aos="fade-left" data-aos-easing="ease-in-sine" class="py-5" style="background-color:#E8E8E8;">
       <div class="container my-4 border">
         <div class="row gx-5 align-items-center">
           <!-- colonna immagine 5/12-->
@@ -182,7 +185,7 @@
 
 
     <!-- INIZIO Opere -->
-    <section class="py-5">
+    <section data-aos="fade-right" data-aos-easing="ease-in-sine" class="py-5" data-aos="fade-left" data-aos-easing="ease-in-sine">
       <div class="container  my-5">
         <div class="row gx-5 align-items-center">
           <div class="col-lg-5 order-first order-lg-last">
@@ -232,7 +235,7 @@
     <!-- FINE Opere -->
 
     <!-- INIZIO Cards: Lista, Mappa, Linea del tempo -->
-    <section class="py-5" style="background-color:#E8E8E8">
+    <section data-aos="fade-up" data-aos-easing="ease-in-sine" class="py-5" style="background-color:#E8E8E8">
       <div class="container px-5 my-5">
         <!-- riga titolo -->
         <div class="row gx-5">
@@ -317,7 +320,11 @@
     <p class="text-center text-body-secondary">Copyright (c) 2025 by Nadine Nicoli</p>
   </footer>
   <!-- FINE Footer -->
+<script>
 
+AOS.init();
+
+</script>
 </body>
 
 </html>
