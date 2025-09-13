@@ -24,7 +24,7 @@
     <!-- fine metadatazione DC-->
 
     <link rel="stylesheet" href="./css/bootstrap.css">
-    <link rel="stylesheet" href="./css/catalogo.css">
+    <link rel="stylesheet" href="./css/item.css">
     <link rel="stylesheet" href="./css/aos.css">
 
   <script src="./js/bootstrap.js"></script>
@@ -75,7 +75,7 @@
 
     <!-- inizio contenuto body -->
     <main role="main">
-        <section class="jumbotron text-center" style="background-color:#F5F5F5">
+        <section class="jumbotron text-center boxbody">
             <div class="container-fluid">
                 <div class="row mb-4">
                     <div class="col">
@@ -87,7 +87,7 @@
                     <!--Colonna metadati-->
                     <div  data-aos="fade-up" data-aos-easing="ease-in-sine" class="col-xs-12 col-sm-12 col-md-4 col-lg-2">
                         <aside class="p-3 bg-light border rounded">
-                            <h5 class="mb-3 text-center">TITOLO....</h5>
+                            <h5 class="mb-3 text-center">RELATIVITA'</h5>
 
                             <div class="mb-3">
                                 <a class="btn btn-outline-dark w-100" type="button" href="#">
@@ -99,14 +99,15 @@
                             <div class="mb-3">
                                 <a class="btn btn-outline-dark w-100" type="button" href="./img/relatività.jpg"
                                     download="download">
-                                    Scarica
+                                    Scarica 
                                 </a>
+                                
                             </div>
 
 
                             <div class="mb-3">
                                 <a class="btn btn-outline-dark w-100" type="button" href="./metadati/relativita.dc.xml">
-                                    📄 XML-DC
+                                     XML-DC
                                 </a>
                             </div>
 
@@ -114,14 +115,14 @@
                             <div class="mb-3">
                                 <a class="btn btn-outline-dark w-100" type="button"
                                     href="./metadati/relativita.tei.xml">
-                                    📄 XML-TEI
+                                     XML-TEI
                                 </a>
                             </div>
 
                             <div class="mb-3">
                                 <a class="btn btn-outline-dark w-100" type="button"
                                     href="./metadati/relativita.autorita.xml">
-                                    🔗 Authorities
+                                     Authorities
                                 </a>
                             </div>
 
@@ -162,7 +163,7 @@
                                         ottiche</button>
                                     <button class="btn btn-secondary btn-sm"><i class="bi bi-tag-fill"></i>
                                         Prospettiva</button>
-                                    <button class="btn btn-success btn-sm"><i class="bi bi-tag-fill"></i> Architettura
+                                    <button class="btn btn-success btn-sm"><i class="bi bi-tag-fill"></i> Strutture
                                         impossibile</button>
                                     <button class="btn btn-info btn-sm"><i class="bi bi-tag-fill"></i> Stampa
                                         litografica</button>
@@ -192,9 +193,9 @@
                                 <img src="./img/Foto3.jpg" class="card-img-top"
                                     alt="M.C. Escher" />
                                 <div class="card-body">
-                                    <h5 class="card-title">M.C. Escher</h5>
-                                    <p class="card-text">Attività: <b>......</b></p>
-                                    <p class="card-text">...... <b>
+                                    <h5 class="card-title"><a class="titololink" href="#">M.C. Escher</a></h5>
+                                    <p class="card-text">Maurits Cornelis Escher (1898-1972) è uno degli artisti grafici più famosi al mondo. 
+                                                        <br> La sua arte è apprezzata da milioni di persone in tutto il mondo.</p>
                                 </div>
                             </div>
                         </div>
@@ -204,12 +205,10 @@
                                 <img src="./img/belvedere.jpg" class="card-img-top"
                                     />
                                 <div class="card-body">
-                                    <h5 class="card-title">Belvedere</h5>
-                                    <ul class="list-group">
-                                      <li class="list-group-item">Data: Maggio 1958</li>
-                                        <li class="list-group-item">Luogo: Museum Escher in Het Paleis</li>
-
-                                    </ul>
+                                    <h5 class="card-title"><a class="titololink" href="#">Belvedere</a></h5>
+                                    <p class="card-text">"Belvedere" di M.C. Escher è un'affascinante litografia che gioca con la percezione e la realtà. 
+                                                     <br>Raffigura un edificio che sembra un'illusione ottica, con elementi architettonici che si intrecciano in modo sorprendente, 
+                                                          creando un senso di mistero e inganno visivo.</p>
                                     
                                 </div>
                             </div>
@@ -225,16 +224,12 @@
     <footer class="py-3 my-4 ">
         <ul class="nav navbar-dark bg-dark justify-content-center border-bottom pb-3 mb-3">
             <li class="nav-item">
-                <a href="index.html" class="nav-link px-2 text-body-secondary" style="color:white !important;">Home</a>
+                <a href="index.html" class="nav-link px-2 footer">Home</a>
             </li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary"
-                    style="color:white !important;">Introduzione</a></li>
-            <li class="nav-item"><a href="catalogo.html" class="nav-link px-2 text-body-secondary"
-                    style="color:white !important;">Catalogo</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary"
-                    style="color:white !important;">Crediti</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary"
-                    style="color:white !important;">Licenze</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 footer">Introduzione</a></li>
+            <li class="nav-item"><a href="catalogo.html" class="nav-link px-2 footer">Catalogo</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 footer">Crediti</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 footer">Licenze</a></li>
         </ul>
         <p class="text-center text-body-secondary">Copyright (c) 2025 by Nadine Nicoli</p>
     </footer>

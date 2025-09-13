@@ -65,3 +65,46 @@ Questa sezione gestisce l'immagine di sfondo del carosello OPERE */
   color: white; /* Testo bianco per contrasto */
   text-shadow: 2px 2px 4px #000000; /* Ombra per leggibilità */
 }
+
+.titoloprincipale { 
+  font-size: 450%;
+  }
+
+.titolosecondario { 
+  font-size: 200%;
+  }
+
+.testointroduzione { 
+  text-align:left;
+  font-size: 17px;
+  }
+
+.boxbiografia { 
+  background-color:#E8E8E8;
+  }
+
+.testobiografia { 
+  font-size: large;
+  }
+
+.scopridipiu { 
+  color: black;
+  font-size:120%
+  }
+
+.imgcarouselopere { 
+  width:400px;
+  height:400px;
+  }
+
+.testoopere {
+ font-size: large
+}
+
+.card {
+  background-color:#E8E8E8
+}
+
+.footer {
+  color:white !important;
+}

@@ -5,12 +5,6 @@ body {
     /* Dimensione base testo */
 }
 
-.topnav {
-    background-color: #333;
-    /* Colore navbar */
-    overflow: hidden;
-    /* Nasconde overflow */
-}
 
 .pagination>li>a {
     background-color: white;
@@ -19,4 +13,16 @@ body {
 
 .nav-link {
     color: black;
+}
+
+.box {
+    background-color:#F5F5F5
+}
+
+.pagelink {
+    margin:20px 0;
+}
+
+.footer {
+    color:white !important;
 }

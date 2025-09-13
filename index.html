@@ -86,8 +86,8 @@
         <img src="./img/giorno-e-notte2.jpg" class="carousel-container-img img-fluid" alt="...">
 
         <div class="carousel-container">
-          <h1 class="titolo" style="font-size: 450%">Il mondo di Escher</h1><br>
-          <h4 class="titolo" style="font-size:200%">“Viaggio tra forme, illusioni e simmetrie”</h4>
+          <h1 class="titolo titoloprincipale">Il mondo di Escher</h1><br>
+          <h4 class="titolo titolosecondario">“Viaggio tra forme, illusioni e simmetrie”</h4>
         </div>
       </div>
 
@@ -104,7 +104,7 @@
         <div class="col-lg-10 col-md-10">
           <h2>M.C. Escher</h2>
           <br>
-          <p style="text-align:left; font-size: 17px">Maurits Cornelis Escher, nato nel 1898 a Leeuwarden, nei Paesi
+          <p class="testointroduzione">Maurits Cornelis Escher, nato nel 1898 a Leeuwarden, nei Paesi
             Bassi,
             è uno degli artisti più affascinanti del XX secolo, capace di trasformare la matematica,
             la geometria e la logica in opere d’arte che sfidano i confini della percezione.
@@ -127,13 +127,13 @@
     <!-- fine introduzione -->
 
     <!-- inizio biografia  -->
-    <section data-aos="fade-left" data-aos-easing="ease-in-sine" class="py-5" style="background-color:#E8E8E8;">
+    <section data-aos="fade-left" data-aos-easing="ease-in-sine" class="py-5 boxbiografia">
       <div class="container my-4 border">
         <div class="row gx-5 align-items-center">
           <!-- colonna immagine 5/12-->
           <div class="col-lg-5">
             <!-- carosello biografia -->
-            <div id="carouselBiografia" class="carousel slide" data-bs-ride="carouselBiografia">
+            <div id="carouselBiografia" class="carousel slide" data-bs-ride="carousel">
               <div class="carousel-inner ">
                 <div class="carousel-item active">
                   <img src="./img/Foto1.jpg" class="img-fluid rounded mb-5 mb-lg-0" alt="...">
@@ -161,7 +161,7 @@
           <!-- colonna testo descrittivo 7/12-->
           <div class="col-lg-7">
             <h2 class="fw-bolder">Biografia </h2>
-            <p class="lead fw-normal text-muted mb-0" style="font-size: large;">Maurits Cornelis Escher nacque il 17
+            <p class="lead fw-normal text-muted mb-0 testobiografia">Maurits Cornelis Escher nacque il 17
               giugno 1898 a Leeuwarden, Paesi Bassi,
               ultimogenito dell'ingegnere idraulico George Arnold Escher e di Sara Gleichman.
               Nel 1903 la agiata famiglia si trasferì a Arnhem, dove il giovane Maurits ricevette la prima educazione
@@ -176,7 +176,7 @@
               Sono molti, dopotutto, gli indizi che consentono di cogliere il lievitare della sua vocazione grafica,
               nonostante anche in questo sia stato incompreso e combattuto, come dimostrano i mortificanti voti ricevuti
               durante gli esami d'arte.</p>
-            <p><a href="#" style="color:black; font-size:120%">Scopri di più</a></p>
+            <p><a href="#" class="scopridipiu">Scopri di più</a></p>
           </div>
         </div>
       </div>
@@ -190,27 +190,25 @@
         <div class="row gx-5 align-items-center">
           <div class="col-lg-5 order-first order-lg-last">
             <!--carosello opere-->
-            <div id="carouselExampleControls2" style="width:400px;height:400px;" class="carousel slide"
+            <div id="carouselOpere" class="carousel slide imgcarouselopere"
               data-bs-ride="carousel">
               <div class="carousel-inner ">
                 <div class="carousel-item active">
                   <img src="./img/relatività.jpg" class="img-fluid rounded mb-5 mb-lg-0" alt="...">
                 </div>
                 <div class="carousel-item">
-                  <img src="./img/escher-galleria-di-stampe-or.jpg" class="img-fluid rounded mb-5 mb-lg-0" alt="..."
-                    style="width: 400px; height: 400px;">
+                  <img src="./img/escher-galleria-di-stampe-or.jpg" class="img-fluid rounded mb-5 mb-lg-0" alt="...">
                 </div>
                 <div class="carousel-item">
-                  <img src="./img/Escher-Rettili.jpg" class="img-fluid rounded mb-5 mb-lg-0" alt="..."
-                    style="width: 400px; height: 400px;">
+                  <img src="./img/Escher-Rettili.jpg" class="img-fluid rounded mb-5 mb-lg-0" alt="...">
                 </div>
               </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls2"
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselOpere"
                 data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
               </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls2"
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselOpere"
                 data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
@@ -219,7 +217,7 @@
           </div>
           <div class="col-lg-7">
             <h2 class="fw-bolder">Opere</h2>
-            <p class="lead fw-normal text-muted mb-0" style="font-size: large;">L'opera di Escher è costituita in gran
+            <p class="lead fw-normal text-muted mb-0 testoopere">L'opera di Escher è costituita in gran
               parte da xilografie, soprattutto litografie e mezzetinte,
               frutto di un’indagine di differenti campi di studio: dalla geometria alla cristallografia, fino alle leggi
               della percezione visiva,
@@ -227,7 +225,7 @@
               <br>Escher mescola la sua capacità grafica di aderenza al reale con le sue elaborazioni visionarie e
               trasformazioni fantastiche,
               concependo così opere narrativamente avvincenti, intellettuali, ma anche emotivamente inquietanti.</p>
-            <p><a href="#" style="color:black; font-size:120%">Scopri di più</a></p>
+            <p><a href="#" class="scopridipiu">Scopri di più</a></p>
           </div>
         </div>
       </div>
@@ -235,7 +233,7 @@
     <!-- FINE Opere -->
 
     <!-- INIZIO Cards: Lista, Mappa, Linea del tempo -->
-    <section data-aos="fade-up" data-aos-easing="ease-in-sine" class="py-5" style="background-color:#E8E8E8">
+    <section data-aos="fade-up" data-aos-easing="ease-in-sine" class="py-5 card">
       <div class="container px-5 my-5">
         <!-- riga titolo -->
         <div class="row gx-5">
@@ -259,7 +257,6 @@
                   le quali hanno influenzato il cinema, i fumetti, la musica, la pop art, la pubblicità e i videoclip.
                 </p>
                 <a class="text-decoration-none link-dark " href="#">
-                  <span style='font-size:40px; padding-left: 80%;'>&#11157;</span>
                 </a>
               </div>
             </div>
@@ -274,7 +271,6 @@
                 <p class="card-text mb-0">Lasciati guidare tra le tappe del maestro: luoghi che lo hanno ospitato,
                   ispirato e influenzato profondamente nella realizzazione delle sue opere più grandi e celebri..</p>
                 <a class="text-decoration-none link-dark " href="#">
-                  <span style='font-size:40px; padding-left: 80%;'>&#11157;</span>
                 </a>
               </div>
             </div>
@@ -289,7 +285,6 @@
                 <p class="card-text mb-0">Ripercorri le tappe fondamentali della formazione e della vita di Escher,
                   dai primi studi fino alla piena affermazione del suo stile unico e visionario.</p>
                 <a class="text-decoration-none link-dark " href="#">
-                  <span style='font-size:40px; padding-left: 80%;'>&#11157;</span>
                 </a>
               </div>
             </div>
@@ -306,16 +301,12 @@
   <footer class="py-3 my-4 ">
     <ul class="nav navbar-dark bg-dark justify-content-center border-bottom pb-3 mb-3">
       <li class="nav-item">
-        <a href="index.html" class="nav-link px-2 text-body-secondary" style="color:white !important;">Home</a>
+        <a href="index.html" class="nav-link px-2 footer ">Home</a>
       </li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary"
-          style="color:white !important;">Introduzione</a></li>
-      <li class="nav-item"><a href="catalogo.html" class="nav-link px-2 text-body-secondary"
-          style="color:white !important;">Catalogo</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary"
-          style="color:white !important;">Crediti</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary"
-          style="color:white !important;">Licenze</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 footer">Introduzione</a></li>
+      <li class="nav-item"><a href="catalogo.html" class="nav-link px-2 footer">Catalogo</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 footer">Crediti</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 footer">Licenze</a></li>
     </ul>
     <p class="text-center text-body-secondary">Copyright (c) 2025 by Nadine Nicoli</p>
   </footer>
