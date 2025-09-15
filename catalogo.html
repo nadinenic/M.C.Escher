@@ -21,16 +21,16 @@
   <meta name="DC.Language" content="it">
   <meta name="DC.Relation" content="catalogo.html, altre sezioni dedicate a Escher">
   <meta name="DC.Rights" content="Copyright (c) 2025 Nadine Nicoli - Tutti i diritti riservati">
-  <!-- fine metadatazione DC-->
+
   <link rel="stylesheet" href="./css/bootstrap.css">
   <link rel="stylesheet" href="./css/catalogo.css">
   <link rel="stylesheet" href="./css/aos.css">
-
   <script src="./js/bootstrap.js"></script>
-    <script src="./js/aos.js"></script>
+  <script src="./js/aos.js"></script>
 
 </head>
 
+<!-- INIZIO navbar-->
 <body>
   <nav class="navbar navbar-dark navbar-expand-lg bg-dark fixed-top">
     <div class="container-fluid">
@@ -46,7 +46,6 @@
           </li>
           <li class="nav-item">
             <a class="nav-link active" href="#">Introduzione</a>
-
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link active dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -57,6 +56,7 @@
               <li>
                 <hr class="dropdown-divider">
               </li>
+              <li><a class="dropdown-item" href="#">Eschermania</a></li>
               <li><a class="dropdown-item" href="#">Linea del tempo</a></li>
               <li><a class="dropdown-item" href="#">Mappa dei luoghi</a></li>
             </ul>
@@ -70,12 +70,7 @@
     </div>
   </nav>
 
-
-  <!-- inizio contenuto body -->
-
-
   <main role="main">
-
     <section class="jumbotron text-center box">
       <div class="container-fluid">
         <div class="row mb-4">
@@ -84,11 +79,18 @@
           </div>
         </div>
 
+        <!-- box filtri -->
         <div class="row">
-          <div  data-aos="fade-right" data-aos-easing="ease-in-sine" class="col-md-4 col-sm-12 col-lg-2 col-xs-12">
-
+          <div data-aos="fade-right" data-aos-easing="ease-in-sine" class="col-md-4 col-sm-12 col-lg-2 col-xs-12">
+            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Catalogo</li>
+              </ol>
+            </nav>
             <aside class="p-3 bg-light border rounded">
-              <h5 class="mb-3 text-center">Filtri</h5>
+              <h5 class="mb-3 text-center">Filtra per:</h5>
+
               <!-- Filtro: Fasi artistiche -->
               <div class="mb-3">
                 <div class="dropdown dropend">
@@ -139,6 +141,10 @@
                       <input class="form-check-input" type="checkbox" id="viaggio4">
                       <label class="form-check-label" for="viaggio4">Olanda (1941- in poi)</label>
                     </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="viaggio5">
+                      <label class="form-check-label" for="viaggio5">Paesi Bassi</label>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -184,12 +190,9 @@
                 <button class="btn btn-outline-secondary" type="button">Reset</button>
               </div>
             </aside>
-
-
-
-
           </div>
 
+          <!-- Main section-->
           <div class="col-lg-10 col-md-8 col-sm-12 col-xs-12">
             <ul class="nav nav-tabs">
               <li class="nav-item">
@@ -204,8 +207,9 @@
               <li class="nav-item">
                 <a class="nav-link" href="#">Film</a>
               </li>
-
             </ul>
+
+            <!-- Inizio card-->
             <div class="album py-5 bg-light ">
               <div class="container ">
                 <div class="row">
@@ -214,8 +218,12 @@
                       <a href="item.html"><img class="card-img-top" src="./img/relatività2.jpg"
                           alt="Card image cap"></a>
                       <div class="card-body">
-                        <p class="card-text"> M. C. Escher, <i>Relatività</i>, 1953
-                        </p>
+                        <div class="card-metadata">
+                          <h6 class="card-title"><b>Relatività</b></h6>
+                          <p class="card-text"><span>Autore: M. C. Escher</span></p>
+                          <p class="card-text"><span>Data: Luglio, 1953</span></p>
+                          <p class="card-text"><span>Collocazione: National Gallery di Washington D.C.</span></p>
+                        </div>
                         <div class="d-flex justify-content-between align-items-center">
                           <div class="btn-group">
                           </div>
@@ -227,7 +235,13 @@
                     <div class="card mb-4 box-shadow">
                       <a href="#"><img class="card-img-top" src="./img/cielo-e-acqua1.jpg" alt="Card image cap"></a>
                       <div class="card-body">
-                        <p class="card-text">M.C. Escher, <i> Cielo e Acqua I</i>, Giugno 1938</p>
+                        <div class="card-metadata">
+                          <h6 class="card-title"><b>Cielo a Acqua I</b></h6>
+                          <p class="card-text"><span>Autore: M. C. Escher</span></p>
+                          <p class="card-text"><span>Data: Giugno, 1938</span></p>
+                          <p class="card-text"><span>Collocazione: Museum Escher in Het Paleis a L'Aia, Paesi
+                              Bassi</span></p>
+                        </div>
                         <div class="d-flex justify-content-between align-items-center">
                           <div class="btn-group">
                           </div>
@@ -239,7 +253,13 @@
                     <div class="card mb-4 box-shadow">
                       <a href="#"><img class="card-img-top" src="./img/drawing hands.jpg" alt="Card image cap"></a>
                       <div class="card-body">
-                        <p class="card-text">M.C. Escher, <i> Mani che disegnano</i>, Gennaio 1948</p>
+                        <div class="card-metadata">
+                          <h6 class="card-title"><b>Mani che disegnano</b></h6>
+                          <p class="card-text"><span>Autore: M. C. Escher</span></p>
+                          <p class="card-text"><span>Data: Gennaio, 1948</span></p>
+                          <p class="card-text"><span>Collocazione: Museum Escher in Het Paleis a L'Aia, Paesi
+                              Bassi</span></p>
+                        </div>
                         <div class="d-flex justify-content-between align-items-center">
                           <div class="btn-group">
                           </div>
@@ -252,7 +272,12 @@
                       <a href="#"><img class="card-img-top" src="./img/mano-con-sfera-riflettente1.jpg"
                           alt="Card image cap"></a>
                       <div class="card-body">
-                        <p class="card-text">M.C. Escher, <i> Mano con sfera riflettente</i>, 1935</p>
+                        <div class="card-metadata">
+                          <h6 class="card-title"><b>Mano con sfera riflettente</b></h6>
+                          <p class="card-text"><span>Autore: M. C. Escher</span></p>
+                          <p class="card-text"><span>Data: 1935</span></p>
+                          <p class="card-text"><span>Collocazione: National Gallery di Washington</span></p>
+                        </div>
                         <div class="d-flex justify-content-between align-items-center">
                           <div class="btn-group">
                           </div>
@@ -265,7 +290,13 @@
                       <a href="#"><img class="card-img-top" src="./img/la-torre-di-babele1.jpg"
                           alt="Card image cap"></a>
                       <div class="card-body">
-                        <p class="card-text">M. C. Escher, <i>La torre di Babele</i>, Febbraio 1928</p>
+                        <div class="card-metadata">
+                          <h6 class="card-title"><b>La torre di Babele</b></h6>
+                          <p class="card-text"><span>Autore: M. C. Escher</span></p>
+                          <p class="card-text"><span>Data: Febbraio, 1928</span></p>
+                          <p class="card-text"><span>Collocazione: Museum Escher in Het Paleis a L'Aia, Paesi
+                              Bassi</span></p>
+                        </div>
                         <div class="d-flex justify-content-between align-items-center">
                           <div class="btn-group">
                           </div>
@@ -277,7 +308,13 @@
                     <div class="card mb-4 box-shadow">
                       <a href="#"><img class="card-img-top" src="./img/belvedere1.jpg" alt="Card image cap"></a>
                       <div class="card-body">
-                        <p class="card-text">M.C. Escher, <i> Belvedere</i>, Maggio 1958</p>
+                        <div class="card-metadata">
+                          <h6 class="card-title"><b>Belvedere</b></h6>
+                          <p class="card-text"><span>Autore: M. C. Escher</span></p>
+                          <p class="card-text"><span>Data: maggio, 1958</span></p>
+                          <p class="card-text"><span>Collocazione: Museum Escher in Het Paleis a L'Aia, Paesi
+                              Bassi</span></p>
+                        </div>
                         <div class="d-flex justify-content-between align-items-center">
                           <div class="btn-group">
                           </div>
@@ -289,7 +326,13 @@
                     <div class="card mb-4 box-shadow">
                       <a href="#"><img class="card-img-top" src="./img/farfalle1.jpg" alt="Card image cap"></a>
                       <div class="card-body">
-                        <p class="card-text">M.C. Escher, <i> Farfalle</i>, Giugno 1950</p>
+                        <div class="card-metadata">
+                          <h6 class="card-title"><b>Farfalle</b></h6>
+                          <p class="card-text"><span>Autore: M. C. Escher</span></p>
+                          <p class="card-text"><span>Data: Giugno, 1950</span></p>
+                          <p class="card-text"><span>Collocazione: Museum Escher in Het Paleis a L'Aia, Paesi
+                              Bassi</span></p>
+                        </div>
                         <div class="d-flex justify-content-between align-items-center">
                           <div class="btn-group">
                           </div>
@@ -301,7 +344,12 @@
                     <div class="card mb-4 box-shadow">
                       <a href="#"><img class="card-img-top" src="./img/stelle1.jpg" alt="Card image cap"></a>
                       <div class="card-body">
-                        <p class="card-text">M.C. Escher <i>Stelle</i>, Ottobre 1948</p>
+                        <div class="card-metadata">
+                          <h6 class="card-title"><b>Stelle</b></h6>
+                          <p class="card-text"><span>Autore: M. C. Escher</span></p>
+                          <p class="card-text"><span>Data: Ottobre, 1948</span></p>
+                          <p class="card-text"><span>Collocazione: National Gallery di Washington</span></p>
+                        </div>
                         <div class="d-flex justify-content-between align-items-center">
                           <div class="btn-group">
                           </div>
@@ -313,7 +361,13 @@
                     <div class="card mb-4 box-shadow">
                       <a href="#"><img class="card-img-top" src="./img/altri-mondi.jpg" alt="Card image cap"></a>
                       <div class="card-body">
-                        <p class="card-text">M. C. Escher, <i>Altro mondo II</i>, Gennaio 1947</p>
+                        <div class="card-metadata">
+                          <h6 class="card-title"><b>Altro mondo II</b></h6>
+                          <p class="card-text"><span>Autore: M. C. Escher</span></p>
+                          <p class="card-text"><span>Data: Gennaio, 1947</span></p>
+                          <p class="card-text"><span>Collocazione: Museum Escher in Het Paleis a L'Aia, Paesi
+                              Bassi</span></p>
+                        </div>
                         <div class="d-flex justify-content-between align-items-center">
                           <div class="btn-group">
                           </div>
@@ -325,7 +379,13 @@
                     <div class="card mb-4 box-shadow">
                       <a href="#"><img class="card-img-top" src="./img/atrani1.jpg" alt="Card image cap"></a>
                       <div class="card-body">
-                        <p class="card-text">M. C. Escher, <i>Atrani</i>,1931</p>
+                        <div class="card-metadata">
+                          <h6 class="card-title"><b>Atrani</b></h6>
+                          <p class="card-text"><span>Autore: M. C. Escher</span></p>
+                          <p class="card-text"><span>Data: 1931</span></p>
+                          <p class="card-text"><span>Collocazione: Museum Escher in Het Paleis a L'Aia, Paesi
+                              Bassi</span></p>
+                        </div>
                         <div class="d-flex justify-content-between align-items-center">
                           <div class="btn-group">
                           </div>
@@ -337,7 +397,13 @@
                     <div class="card mb-4 box-shadow">
                       <a href="#"><img class="card-img-top" src="./img/giorno-e-notte.jpg" alt="Card image cap"></a>
                       <div class="card-body">
-                        <p class="card-text">M. C. Escher, <i>Giorno e notte</i>, Febbraio 1938</p>
+                        <div class="card-metadata">
+                          <h6 class="card-title"><b>Giorno e notte</b></h6>
+                          <p class="card-text"><span>Autore: M. C. Escher</span></p>
+                          <p class="card-text"><span>Data: Febbraio, 1938</span></p>
+                          <p class="card-text"><span>Collocazione: Museum Escher in Het Paleis a L'Aia, Paesi
+                              Bassi</span></p>
+                        </div>
                         <div class="d-flex justify-content-between align-items-center">
                           <div class="btn-group">
                           </div>
@@ -349,7 +415,12 @@
                     <div class="card mb-4 box-shadow">
                       <a href="#"><img class="card-img-top" src="./img/vincolo-d'unione.jpg" alt="Card image cap"></a>
                       <div class="card-body">
-                        <p class="card-text">M. C. Escher, <i>Vincolo d'unione</i>, Aprile 1956</p>
+                        <div class="card-metadata">
+                          <h6 class="card-title"><b>Vincolo d'unione</b></h6>
+                          <p class="card-text"><span>Autore: M. C. Escher</span></p>
+                          <p class="card-text"><span>Data: Aprile, 1956</span></p>
+                          <p class="card-text"><span>Collocazione: Collesione privata, Italia</span></p>
+                        </div>
                         <div class="d-flex justify-content-between align-items-center">
                           <div class="btn-group">
                           </div>
@@ -362,13 +433,6 @@
             </div>
           </div>
         </div>
-
-
-
-        <!-- INIZIO FILTRI OPERE -->
-
-        <!-- FINE FILTRI OPERE -->
-
 
         <ul class="pagination justify-content-center pagelink">
           <li class="page-item">
@@ -387,16 +451,10 @@
             <a class="page-link" href="#">Next</a>
           </li>
         </ul>
-
-
-
-
-
   </main>
-  <!-- fine contenuto body -->
 
 
-  <!-- fine contenuto body -->
+  <!-- Inizio footer-->
   <footer class="py-3 my-4 ">
     <ul class="nav navbar-dark bg-dark justify-content-center border-bottom pb-3 mb-3">
       <li class="nav-item">
@@ -409,11 +467,9 @@
     </ul>
     <p class="text-center text-body-secondary">Copyright (c) 2025 by Nadine Nicoli</p>
   </footer>
-<script>
-
-AOS.init();
-
-</script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>

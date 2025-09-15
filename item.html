@@ -10,8 +10,7 @@
     <meta name="DC.Title" content="Il mondo di Escher">
     <meta name="DC.Creator" content="Nadine Nicoli">
     <meta name="DC.Subject" content="M.C. Escher, arte, illusioni ottiche, simmetrie, xilografie, litografie">
-    <meta name="DC.Description"
-        content="Sito dedicato a Maurits Cornelis Escher, con introduzione, biografia, opere, linea del tempo, mappa dei luoghi ed esplorazioni tematiche.">
+    <meta name="DC.Description" content="Sito dedicato a Maurits Cornelis Escher, con introduzione, biografia, opere, linea del tempo, mappa dei luoghi ed esplorazioni tematiche.">
     <meta name="DC.Publisher" content="Nadine Nicoli">
     <meta name="DC.Date" content="2025">
     <meta name="DC.Type" content="Sito web informativo ed educativo">
@@ -21,16 +20,15 @@
     <meta name="DC.Language" content="it">
     <meta name="DC.Relation" content="catalogo.html, altre sezioni dedicate a Escher">
     <meta name="DC.Rights" content="Copyright (c) 2025 Nadine Nicoli - Tutti i diritti riservati">
-    <!-- fine metadatazione DC-->
 
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/item.css">
     <link rel="stylesheet" href="./css/aos.css">
-
-  <script src="./js/bootstrap.js"></script>
+    <script src="./js/bootstrap.js"></script>
     <script src="./js/aos.js"></script>
 </head>
 
+<!-- INIZIO navbar-->
 <body>
     <nav class="navbar navbar-dark navbar-expand-lg bg-dark fixed-top">
         <div class="container-fluid">
@@ -59,6 +57,7 @@
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
+                            <li><a class="dropdown-item" href="#">Eschermania</a></li>
                             <li><a class="dropdown-item" href="#">Linea del tempo</a></li>
                             <li><a class="dropdown-item" href="#">Mappa dei luoghi</a></li>
                         </ul>
@@ -73,7 +72,7 @@
     </nav>
 
 
-    <!-- inizio contenuto body -->
+    <!-- INIZIO contenuto body -->
     <main role="main">
         <section class="jumbotron text-center boxbody">
             <div class="container-fluid">
@@ -82,68 +81,62 @@
                         <h1 class="jumbotron-heading text-center">Nome Opera</h1>
                     </div>
                 </div>
-
+                <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item" aria-current="page"><a href="catalogo.html">Catalogo</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Relatività</li>
+                    </ol>
+                </nav>
                 <div class="row">
-                    <!--Colonna metadati-->
-                    <div  data-aos="fade-up" data-aos-easing="ease-in-sine" class="col-xs-12 col-sm-12 col-md-4 col-lg-2">
+
+                    <!--Colonna bottoni e metadati-->
+                    <div data-aos="fade-up" data-aos-easing="ease-in-sine"
+                        class="col-xs-12 col-sm-12 col-md-4 col-lg-2">
                         <aside class="p-3 bg-light border rounded">
-                            <h5 class="mb-3 text-center">RELATIVITA'</h5>
+                            <h5 class="mb-3 text-center">Relatività</h5>
 
                             <div class="mb-3">
                                 <a class="btn btn-outline-dark w-100" type="button" href="#">
                                     Condividi
                                 </a>
                             </div>
-
-
                             <div class="mb-3">
                                 <a class="btn btn-outline-dark w-100" type="button" href="./img/relatività.jpg"
                                     download="download">
-                                    Scarica 
+                                    Scarica
                                 </a>
-                                
                             </div>
-
-
                             <div class="mb-3">
                                 <a class="btn btn-outline-dark w-100" type="button" href="./metadati/relativita.dc.xml">
-                                     XML-DC
+                                    XML-DC
                                 </a>
                             </div>
-
-
-                            <div class="mb-3">
-                                <a class="btn btn-outline-dark w-100" type="button"
-                                    href="./metadati/relativita.tei.xml">
-                                     XML-TEI
-                                </a>
-                            </div>
-
                             <div class="mb-3">
                                 <a class="btn btn-outline-dark w-100" type="button"
                                     href="./metadati/relativita.autorita.xml">
-                                     Authorities
+                                    Authorities
                                 </a>
                             </div>
-
-
                         </aside>
                     </div>
-                    <!--Colonna Carosello-->
+
+                    <!--Colonna Card-->
                     <div class="col-lg-7 col-md-4 col-sm-12 col-xs-12">
                         <div class="card">
                             <div class="carousel-inner">
                                 <div class="carousel-item active ">
-                                    <img src="./img/relatività.jpg" alt="..."  class="d-block w-100">
+                                    <img src="./img/relatività.jpg" alt="..." class="d-block w-100">
                                 </div>
-
                             </div>
                             <div class="card-body">
                                 <p class="card-text"><span>Titolo:</span> <b>Relatività</b></p>
                                 <hr>
-                                <p class="card-text"><span>Creatore:</span> <b>Maurits Cornelis Escher</b></p>
+                                <p class="card-text"><span>Autore:</span> <a href="http://viaf.org/viaf/5051087"
+                                        target="_blank" title="identificativo VIAF M. C. Escher"><b>M. C.
+                                            Escher</b><sup> VIAF</sup></a></p>
                                 <hr>
-                                <p class="card-text"><span>Data:</span> <b>1953</b></p>
+                                <p class="card-text"><span>Data:</span> <b>Luglio, 1953</b></p>
                                 <hr>
                                 <p class="card-text"><span>Tipo di oggetto:</span> <b>Stampa litografica</b></p>
                                 <hr>
@@ -153,74 +146,68 @@
                                 <hr>
                                 <p class="card-text"><span>Codice identificativo:</span> <b>relativity-1953</b></p>
                                 <hr>
-                                <p class="card-text"><span>Istituzione fornitrice:</span> <b>M.C. Escher Foundation</b></p>
+                                <p class="card-text"><span>Istituzione fornitrice:</span> <b> <a
+                                            href="https://mcescher.com/">M.C. Escher Foundation</a></b>
+                                </p>
                                 <hr>
-                                <p class="card-text"><span>Posizione attuale:</span> <b>National Gallery di Washington D.C.</b></p>
+                                <p class="card-text"><span>Posizione attuale:</span> <b> <a
+                                            href="https://www.geonames.org/4139734" target="_blank"
+                                            title="Identificativo GeoNames della Nationale gallery di Washington, D.C">National
+                                            Gallery di Washington D.C.<sup>GeoNames</sup></a></b></p>
                                 <hr>
-                                <p class="card-text">Tema:</p>
+                                <p class="card-text">Filtri:</p>
                                 <div>
-                                    <button class="btn btn-primary btn-sm"><i class="bi bi-tag-fill"></i> Illusioni
-                                        ottiche</button>
-                                    <button class="btn btn-secondary btn-sm"><i class="bi bi-tag-fill"></i>
-                                        Prospettiva</button>
-                                    <button class="btn btn-success btn-sm"><i class="bi bi-tag-fill"></i> Strutture
+                                    <button class="btn btn-primary btn-sm"><i class="bi bi-tag-fill"></i>Fase matematico
+                                        e concettuale</button>
+                                    <button class="btn btn-info btn-sm"><i class="bi bi-tag-fill"></i>Paesi
+                                        bassi</button>
+                                    <button class="btn btn-success btn-sm"><i class="bi bi-tag-fill"></i>Strutture
                                         impossibile</button>
+                                    <button class="btn btn-primary btn-sm"><i
+                                            class="bi bi-tag-fill"></i>Infinito</button>
                                     <button class="btn btn-info btn-sm"><i class="bi bi-tag-fill"></i> Stampa
                                         litografica</button>
                                 </div>
-                                
-                                
-                                
-                                
                             </div>
                         </div>
-                        <!-- The slideshow/carousel -->
-
                     </div>
 
-                    <!--Colonna guida-->
-                    <div  data-aos="fade-up" data-aos-easing="ease-in-sine" class="col-xs-12 col-sm-12 col-md-4 col-lg-3">
+                    <!--Colonna risorse collegate-->
+                    <div data-aos="fade-up" data-aos-easing="ease-in-sine"
+                        class="col-xs-12 col-sm-12 col-md-4 col-lg-3">
                         <aside class="p-3 bg-light border rounded">
-                            <h5 class="mb-3 text-center">Guida</h5>
-                               <!-- guida -->
-                        <div>
-                            
-                        </div>
-                        <!-- suggerimenti -->
-                        <div class="mt-4">
-                            <p class="h6">Scopri di più sul creatore:</p>
-                            <div class="card">
-                                <img src="./img/Foto3.jpg" class="card-img-top"
-                                    alt="M.C. Escher" />
-                                <div class="card-body">
-                                    <h5 class="card-title"><a class="titololink" href="#">M.C. Escher</a></h5>
-                                    <p class="card-text">Maurits Cornelis Escher (1898-1972) è uno degli artisti grafici più famosi al mondo. 
-                                                        <br> La sua arte è apprezzata da milioni di persone in tutto il mondo.</p>
+                            <h5 class="mb-3 text-center">RISORSE COLLEGATE</h5>
+                            <div class="mt-4">
+                                <p class="h6">Scopri di più sul creatore:</p>
+                                <div class="card">
+                                    <img src="./img/Foto3.jpg" class="card-img-top" alt="M.C. Escher" />
+                                    <div class="card-body">
+                                        <h5 class="card-title"><a class="titololink" href="#">M.C. Escher</a></h5>
+                                        <p class="card-text">Maurits Cornelis Escher (1898-1972) è uno degli artisti
+                                            grafici più famosi al mondo.
+                                            <br> La sua arte è apprezzata da milioni di persone in tutto il mondo.</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="mt-4">
-                            <h6>Potrebbe interessarti anche:</h6>
-                            <div class="card">
-                                <img src="./img/belvedere.jpg" class="card-img-top"
-                                    />
-                                <div class="card-body">
-                                    <h5 class="card-title"><a class="titololink" href="#">Belvedere</a></h5>
-                                    <p class="card-text">"Belvedere" di M.C. Escher è un'affascinante litografia che gioca con la percezione e la realtà. 
-                                                     <br>Raffigura un edificio che sembra un'illusione ottica, con elementi architettonici che si intrecciano in modo sorprendente, 
-                                                          creando un senso di mistero e inganno visivo.</p>
-                                    
+                            <div class="mt-4">
+                                <h6>Potrebbe interessarti anche:</h6>
+                                <div class="card">
+                                    <img src="./img/belvedere.jpg" class="card-img-top" />
+                                    <div class="card-body">
+                                        <h5 class="card-title"><a class="titololink" href="#">Belvedere</a></h5>
+                                        <p class="card-text"><span>Autore: M. C. Escher</span></p>
+                                        <p class="card-text"><span>Data: Maggio, 1958</span></p>
+                                        <p class="card-text"><span>Collocazione: Museum Escher in Het Paleis a L'Aia,
+                                                Paesi Bassi</span></p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
                         </aside>
                     </div>
                 </div>
     </main>
-    <!-- fine contenuto body -->
 
-
-    <!-- fine contenuto body -->
+    <!-- INIZIO footer-->
     <footer class="py-3 my-4 ">
         <ul class="nav navbar-dark bg-dark justify-content-center border-bottom pb-3 mb-3">
             <li class="nav-item">
@@ -236,8 +223,6 @@
 
 </body>
 <script>
-
-AOS.init();
-
+    AOS.init();
 </script>
 </html>
