@@ -9,3 +9,14 @@
 .footer {
    color:white !important; 
 }
+
+.footer-img {
+  height: 400%;      
+  margin-left: 100px; 
+  object-fit: cover;
+}
+
+.nav-link.footer {
+  height: 50px;
+  line-height: 50px; 
+}
