@@ -8,6 +8,7 @@ body{
     overflow: hidden; 
 }
 
+/* conteiner titolo heroimage*/
 .carousel-container {
   position: absolute; 
   background-color: rgba(26, 26, 26, .3); 
@@ -26,12 +27,6 @@ body{
   box-sizing: border-box; 
 }
 
-@media (max-width: 768px) {
-  .carousel-container {
-    padding: 1rem; 
-    font-size: 1rem; 
-  }
-}
 
 .carousel {
   width: 100%; 
@@ -46,17 +41,7 @@ body{
   width: 100%;
 }
 
-@media (max-width: 768px) {
-  .carousel-img-box {
-    height: 40vh; 
-    min-height: 120px;
-  }
-}
-
-@media (max-width: 1200px) {
-
-}
-
+/*titolo heroimage*/
 .titolo {
   color: white;
   text-shadow: 2px 2px 4px #000000; 
