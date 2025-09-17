@@ -38,7 +38,6 @@ body{
   padding: 0;
   margin: 0;
   background-color: var(--background-color); 
-  position: relative; 
 }
 
 .carousel-img-box {
@@ -100,6 +99,10 @@ body{
 
 .card {
   background-color:#E8E8E8
+}
+
+.cardtitle {
+  color: black;
 }
 
 .footer {
